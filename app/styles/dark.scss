@@ -1,0 +1,87 @@
+body.dark{
+  background-color: #26282B;
+  color: #eceaea;
+  p,span,h1,h2,h3,h3,h5{
+    color: #e3e3e3;
+  }
+  .card{
+    background-color: #353941;
+  }
+  table thead.custom, table thead.custom tr, table thead.custom tr th{
+    background-color: #353941;
+    color: #e5e4e4;
+    border-bottom: 1px solid  #353941 !important;
+
+
+  }
+  .table > :not(caption) > * > * {
+    background-color: #26282B !important;
+    --bs-table-accent-bg: #26282B !important;
+    border-color: #494d4b !important;
+    color: #e3e3e3;
+  }
+  .matches .matchItem--league a h2, .matches .matchItem--league a .h2{
+    color: var(--calendar-selected-btn-bg-color);
+  }
+  .cutterText,.text-black, .team .tournaments .tournament .name, .matchDetail--result .team .nameLogoScore .nameLogo h5, .matchDetail--result .team .nameLogoScore .nameLogo .h5, .matchItem .name, table.standingTable span.teamName{
+    color: #e3e3e3 !important;
+  }
+  table tbody tr{
+    border-color: #353941;
+
+  }
+  .calendarMatches li.selected{
+    background-color: var(--calendar-selected-btn-bg-color);
+    color: #e3e3e3;
+  }
+ .calendarMatches li.selected .day{
+   color: var(--calendar-btn-text-color) !important;
+
+   }
+  header .navbar.navbar-dark{
+    background-color: #26282B !important;
+
+  }
+  .calendarMatches li{
+    background-color: #353941;
+  }
+  .calendarMatches li .day{
+  }
+  .postItem a .headText p,#event-tags a{
+    color: #e3e3e3;
+  }
+  .matchDetail{
+    background-color: #26282B;
+  }
+  .matchDetailNav{
+    background-color: #353941;
+  }
+  .matchDetail--date,.matchDetail--result{
+    border-color:#26282B ;
+  }
+  .matchDetailNav .matchDetail--container .nav-link.active,.matchDetailNav .matchDetail--container .nav-link{
+    border: unset !important;
+    color: #fff;
+  }
+  .form-select{
+    background-color: #26282B;
+    color: #fff;
+    border-color: #000;
+
+  }
+  .accordion-item{
+    background-color: #26282b;
+    border-color: #353941;
+
+  }
+  .border-bottom{
+    border-color: #353941 !important;
+  }
+  .accordion-button{
+    background-color: #212529;
+    color: #fff;
+  }
+}
+body.dark .bgHighlightHome ,body.dark .bgHighlightAway{
+  color: #000 !important;
+}

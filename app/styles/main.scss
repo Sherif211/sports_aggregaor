@@ -1,0 +1,251 @@
+body {
+  overflow-x: hidden;
+  background-color: var(--body-background-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--body-text-color);
+}
+
+h1 {
+  font-size: $font-size-base * 2.2;
+  @media (max-width: 992px) {
+    font-size: $font-size-base * 2;
+  }
+  @media (max-width: 768px) {
+    font-size: $font-size-base * 1.9;
+  }
+  @media (max-width: 576px) {
+    font-size: $font-size-base * 1.7;
+  }
+}
+
+h2 {
+  font-size: $font-size-base * 2;
+  @media (max-width: 992px) {
+    font-size: $font-size-base * 1.9;
+  }
+  @media (max-width: 768px) {
+    font-size: $font-size-base * 1.8;
+  }
+  @media (max-width: 576px) {
+    font-size: $font-size-base * 1.5;
+  }
+}
+
+h3 {
+  font-size: $font-size-base * 1.75;
+  @media (max-width: 992px) {
+    font-size: $font-size-base * 1.6;
+  }
+  @media (max-width: 768px) {
+    font-size: $font-size-base * 1.5;
+  }
+  @media (max-width: 576px) {
+    font-size: $font-size-base * 1.3;
+  }
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.noGutter .row {
+  @media (max-width: 992px) {
+    --bs-gutter-x: 0;
+  }
+}
+
+.svgIcon {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+
+  &.sm {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+  }
+
+
+  &.text-info {
+    fill: var(--bs-info);
+  }
+
+  &.twitter {
+    fill: #{$twitterBrandColor};
+  }
+}
+
+.yellowCard {
+  &:after {
+    display: inline-block;
+    content: ' ';
+    width: 12px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #f3b601;
+  }
+}
+
+.cardIcon {
+  &:after {
+    display: inline-block;
+    content: ' ';
+    width: 12px;
+    height: 16px;
+    border-radius: 2px;
+  }
+
+  &.yellow:after {
+    background-color: #f3b601;
+  }
+
+  &.red:after {
+    background-color: #d11;
+  }
+
+}
+
+.bgHighlightHome {
+  background-color: var(--hightlight-home) !important;
+  font-weight: 500;
+}
+
+.bgHighlightAway {
+  background-color: var(--hightlight-away) !important;
+  font-weight: 500;
+}
+
+
+.calendarMatches {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+  padding: 3px;
+  white-space: nowrap;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    width: 14%;
+    margin: 3px;
+    text-align: center;
+    border-radius: 70px;
+    line-height: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    padding: 10px;
+    color: var(--calendar-btn-text-color);
+    background-color: var(--calendar-btn-bg-color);
+
+    @media (max-width: 992px) {
+      padding: 7px 5px;
+      width: 100%;
+    }
+
+    .day {
+      font-size: 14px;
+      display: block;
+      text-align: center;
+    }
+
+    &.selected {
+      background-color: var(--calendar-selected-btn-bg-color);
+      transition: all 0.5s;
+    }
+  }
+  li.race {
+    width: 30%;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+#event-tags {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+#event-tags a {
+  color: #000000;
+}
+
+.streams td {
+  padding: 3px !important;
+}
+
+.streams td div {
+  line-height: 10px;
+}
+
+.streams td i {
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.streams td i:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.competition-cell-status {
+  display: block;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: -.02em;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  justify-content: center;
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
+
+
+  .navbar {
+    padding: 0;
+  }
+
+  .nav-link {
+    color: white !important;
+  }
+
+  hr {
+    background-color: #191919;
+  }
+}
+
+.cutterText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+@import "newstyle";
+@import "motorsport";
+header .navbar.navbar-dark .container .navbar-nav .nav-link:first-child{
+  padding-left: 0;
+}
+#dynamic-content img{
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,39 @@
+.teamColor {
+  border-top-style: solid;
+  border-top-width: 36px;
+  border-right: 6px solid transparent;
+  height: 0;
+  width: 15px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 2px 2px 3px);
+}
+
+.position-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before, &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+  }
+
+
+}
+
+.position-container.after {
+  &::after {
+    border-width: 8px 4px 0;
+    border-color: rgb(237, 28, 36) transparent transparent;
+  }
+}
+
+.position-container.before {
+  &::before {
+    border-width: 0 4px 8px;
+    border-color: transparent transparent rgb(100, 202, 63)
+
+  }
+}

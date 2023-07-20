@@ -1,0 +1,116 @@
+@import "variables.module";
+@import "~bootstrap/scss/bootstrap";
+@import "main";
+@import "streams";
+
+:root {
+  --hightlight-home: #{$highlightHome};
+  --hightlight-away: #{$highlightAway};
+}
+
+#link404 {
+  color: #001520;
+
+  a {
+    color: #001520;
+  }
+}
+
+
+.navbar, .row, .competition, img, .btn {
+  content-visibility: auto;
+}
+
+#stand-with-uk {
+  height: 275px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #stand-with-uk {
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  #stand-with-uk {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  #stand-with-uk {
+    height: 390px;
+  }
+}
+
+#streams {
+  min-height: 50px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: unset;
+}
+
+#main-heading{
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  padding: 10px;
+}
+.matchDetail--result .status{
+  margin-top: 35px;
+}
+@import "dark";
+
+.sidebar {
+  text-align: center;
+}
+.social-links {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.social-links li {
+  display: inline-block;
+}
+.social-links .social-tooltip {
+  margin: 0 10px;
+  color: hsla(0,0%,100%,.7);
+  color: #333;
+  font-size: 18px;
+  display: inline;
+  position: relative;
+  z-index: 98;
+}
+.social-links img {
+  border-radius: 30px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 10%), 0 1px 1px rgb(0 0 0 / 15%);
+}
+.social-links img {
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  background: #333;
+}
+.social-links a img {
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+}

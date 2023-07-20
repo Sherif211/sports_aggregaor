@@ -1,0 +1,17 @@
+@import "overrides";
+
+$highlightHome: '#B8DAFF';
+$highlightAway: '#BEE5EB';
+$twitterBrandColor: '#1D9BF0';
+
+:export {
+  headerBackgroundColor: #333333;
+  headerTextColor: #FFFFFF;
+  bodyBackgroundColor: #EDEEF0;
+  bodyTextColor: #1D1E1F;
+  footerBackgroundColor: #333333;
+  footerTextColor: #FFFFFF;
+  calendarButtonBgColor: #bbc0c4;
+  calendarSelectedButtonBgColor: #FF69B4;
+  calendarButtonTextColor: #1d1e1f;
+}
